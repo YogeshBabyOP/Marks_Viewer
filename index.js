@@ -137,7 +137,7 @@ function getTotal () {
     for (let i = 0; i < TotalArrays.length; i++) {
         let arrayOfMarks = TotalArrays[i];
         for (let j = 0; j < 1; j++) {
-            sum += arrayOfMarks[RollnoList.indexOf(document.getElementById("textid").value)];
+            sum += arrayOfMarks[RollnoList.indexOf(document.getElementById("textid").value.toString().toLowerCase())];
         }
     }
     return sum;
