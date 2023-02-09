@@ -21,7 +21,7 @@ document.getElementById("btnid").onclick = function getMarks() {
     stopProcess(); 
 
     RollnoList.indexOf(document.getElementById("textid").value)
-    document.getElementById("titleOP").innerHTML = NamesList[RollnoList.indexOf(document.getElementById("textid").value)] + " Marks"
+    document.getElementById("titleOP").innerHTML = NamesList[RollnoList.indexOf(document.getElementById("textid").toString().toLowerCase().value)] + " Marks"
 
     input = document.getElementById("textid")
     rollNo = input.value.toString().toLowerCase();
